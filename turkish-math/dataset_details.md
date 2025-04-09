@@ -23,6 +23,6 @@ The input prompt provided to the model (`ytu-ce-cosmos/Turkish-Llama-8b-Instruct
 
 {question_text}
 
-Lutfen cevabını su formatta ver:
-<think> Dusunce surecini buraya adım adım yaz. </think>
-<answer> Nihai cevabını buraya yaz ve sonucu #### sayi formatıyla bitir. </answer><|eot_id|><|start_header_id|>assistant<|end_header_id|>
+Lutfen cevabini su formatta ver:
+<think> Dusunce surecini buraya adim adim yaz. </think>
+<answer> Nihai cevabini buraya yaz ve sonucu #### sayi formatiyla bitir. </answer><|eot_id|><|start_header_id|>assistant<|end_header_id|>
