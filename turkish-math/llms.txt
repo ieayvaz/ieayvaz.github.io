@@ -15,15 +15,15 @@ Key components (current focus):
 
 ## Implementation
 
-- [GRPO Training Overview](./grpo_training_script.md): Summary of the script implementing the current primary approach (GRPO fine-tuning), highlighting key steps and customizations.
+- [GRPO Training Overview](https://ieayvaz.github.io/turkish-math/grpo_training_script.md): Summary of the script implementing the current primary approach (GRPO fine-tuning), highlighting key steps and customizations.
 
 ## Methodology Details
 
-- [RL Approach and Reward Design](./methodology.md): Explanation of the current RL approach (GRPO), the structured output format rationale, and the reward structure (format + accuracy).
+- [RL Approach and Reward Design](https://ieayvaz.github.io/turkish-math/methodology.md): Explanation of the current RL approach (GRPO), the structured output format rationale, and the reward structure (format + accuracy).
 
 ## Data Requirements and Prompting
 
-- [Dataset Needs and Prompting](./dataset_details.md): Information on the type of datasets used (math problems with solutions) and the prompting strategy for the target LLM.
+- [Dataset Needs and Prompting](https://ieayvaz.github.io/turkish-math/dataset_details.md): Information on the type of datasets used (math problems with solutions) and the prompting strategy for the target LLM.
 
 ## Optional Resources
 
