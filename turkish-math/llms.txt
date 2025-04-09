@@ -1,0 +1,32 @@
+# Turkish LLM Math Performance Enhancement
+
+> This project enhances Turkish LLM math reasoning using Reinforcement Learning (RL). It focuses on improving step-by-step problem-solving and final answer accuracy in mathematical domains.
+
+The core approach involves fine-tuning Turkish language models on mathematical reasoning datasets. A key element is 
+training the model to adhere to explicit reasoning steps (`<think>`) followed by a final answer (`<answer>...#### number</answer>`). 
+This structure facilitates programmatic reward calculation based on both format adherence and numerical accuracy.
+
+Key components (current focus):
+- **Model:** `ytu-ce-cosmos/Turkish-Llama-8b-Instruct-v0.1`
+- **Technique:** GRPO (via `trl.GRPOTrainer`, includes custom trainer for EOS handling)
+- **Datasets:** `malhajar/gsm8k-tr`
+- **Format:** Structured reasoning output (e.g., `<think>`/`<answer>`) with marked final numerical result.
+- **Libraries:** `transformers`, `peft`, `trl`, `bitsandbytes`, `datasets`.
+
+## Implementation
+
+- [GRPO Training Overview](./grpo_training_script.md): Summary of the script implementing the current primary approach (GRPO fine-tuning), highlighting key steps and customizations.
+
+## Methodology Details
+
+- [RL Approach and Reward Design](./methodology.md): Explanation of the current RL approach (GRPO), the structured output format rationale, and the reward structure (format + accuracy).
+
+## Data Requirements and Prompting
+
+- [Dataset Needs and Prompting](./dataset_details.md): Information on the type of datasets used (math problems with solutions) and the prompting strategy for the target LLM.
+
+## Optional Resources
+
+- [Turkish-Llama-8b-Instruct Model Card](https://huggingface.co/ytu-ce-cosmos/Turkish-Llama-8b-Instruct-v0.1): Base model used in initial experiments.
+- [GSM8K-TR Dataset Card](https://huggingface.co/datasets/malhajar/gsm8k-tr): Example dataset used.
+- [TRL Library Documentation](https://huggingface.co/docs/trl/index): Relevant RL library.
